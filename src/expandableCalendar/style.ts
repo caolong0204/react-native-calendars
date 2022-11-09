@@ -5,7 +5,7 @@ import constants from '../commons/constants';
 
 
 export const HEADER_HEIGHT = 68;
-export const KNOB_CONTAINER_HEIGHT = 24;
+export const KNOB_CONTAINER_HEIGHT = 0;
 
 
 export default function styleConstructor(theme: Theme = {}) {
@@ -19,7 +19,7 @@ export default function styleConstructor(theme: Theme = {}) {
           shadowColor: '#858F96',
           shadowOpacity: 0.25,
           shadowRadius: 10,
-          shadowOffset: {height: 2, width: 0},
+          shadowOffset: {height: 5, width: 0},
           zIndex: 99
         },
         android: {
@@ -41,13 +41,13 @@ export default function styleConstructor(theme: Theme = {}) {
       bottom: 0,
       alignItems: 'center',
       justifyContent: 'center',
-      backgroundColor: appStyle.calendarBackground
+      backgroundColor: 'transparent'// normally it is  appStyle.calendarBackground
     },
     knob: {
       width: 40,
       height: 4,
       borderRadius: 3,
-      backgroundColor: appStyle.expandableKnobColor
+      backgroundColor: 'transparent'// normally it is  appStyle.expandableKnobColor
     },
     sectionText: {
       fontWeight: 'bold', 

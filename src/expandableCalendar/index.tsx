@@ -512,7 +512,7 @@ const ExpandableCalendar = (props: ExpandableCalendarProps) => {
 
   const renderKnob = () => {
     return (
-      <View style={style.current.knobContainer} pointerEvents={'box-none'}>
+      <View style={style.current.knobContainer} pointerEvents={'none'}>
         <TouchableOpacity style={style.current.knob} testID={`${testID}.knob`} onPress={toggleCalendarPosition} hitSlop={knobHitSlop} /* activeOpacity={isOpen ? undefined : 1} *//>
       </View>
     );
